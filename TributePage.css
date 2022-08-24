@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #eee;
+    overflow-x: hidden;
+}
+ 
+.title{
+    display:block;
+    font-size: 500%;
+    margin-top:5%;
+    transform: translateX(-20%);
+}
+.tagline{
+    display: block;
+    font-size: large;
+}
+
+
+.content-img,.img{
+    display: grid;
+    grid-template: 1 / 1 / 3 / 1;
+    margin-left: 19%;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+#img-caption{
+    display: flex;
+    padding-left: 19%;
+}
+#box-caption{
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 35%;
+    margin-left: 26%;
+}
+.box-heading{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: block;
+    margin-left: 4%;
+    width: 100%;
+    height: fit-content;
+}
+footer{
+    display:flex;
+    justify-content: center;
+}
+.content-img{
+    margin: 2%
+}
+@media (min-width: 480px){
+    header .title{
+        font-size: 30px;
+        transform: translateX(-29%);
+        margin-left: 45%;
+    }
+    .content-img,.img{
+        display: grid;
+        grid-template: 1 / 1 / 3 / 1;
+        margin-top: 5%;;
+        margin-left: 5%;
+        height: 90%;
+        width: 90%;
+        flex-wrap: wrap;
+        background-color: #fff;
+    }
+    #img-caption{
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+    }
+    .box{
+        width: 50%;
+        margin-right: 15%;
+        transform: translateX(90px);
+    }
+    .tagline{
+        display: block;
+        transform: translateX(31%);
+        font-size: medium;
+    }
+    .box-heading{
+        display: block;
+        transform: translateX(14%);
+    }
+}
+
+@media (min-width: 1200px){
+    header .title{
+        font-size: 400%;
+        transform: translateX(-26%);
+    }
+    .tagline{
+        transform: translateX(40%);
+    }
+    .box-heading{
+        transform: translateX(35%);
+    }
+    .box{
+        width: 50%;
+        margin-right: 15%;
+        transform: translateX(37%);
+    }
+
+    
+}
